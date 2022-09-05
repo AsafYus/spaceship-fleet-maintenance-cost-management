@@ -1,9 +1,8 @@
-//  Spacecraft.cpp
+//  file Spacecraft.cpp
 #include "Spacecraft.h"
 
 
-//  A method that returns a total annual maintenance cost.
-virtual int getAnnualMaintenanceCost() = 0;
+
 
 void Spacecraft::set_maximal_speed(float maximalSpeed)
 {
@@ -12,7 +11,5 @@ void Spacecraft::set_maximal_speed(float maximalSpeed)
     else
         this->maximalSpeed = 0.0f;
 }
-
-virtual ~Spacecraft() = default;
 
 

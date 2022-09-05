@@ -1,7 +1,7 @@
-// Spacecraft.h
+// file Spacecraft.h
 
-#ifndef Spacecraft_H
-#define Spacecraft_H
+#ifndef SPACECRAFT_H
+#define SPACECRAFT_H
 
 #include <string>
 
@@ -13,6 +13,8 @@ public:
     
     Spacecraft() : firePower(10) {
     }
+    
+    void set_maximal_speed(float maximalSpeed);
 
     //  A method that returns a total annual maintenance cost.
     virtual int getAnnualMaintenanceCost() = 0;
@@ -21,4 +23,4 @@ public:
 
 };
 
-#endif
+#endif  // SPACECRAFT_H
