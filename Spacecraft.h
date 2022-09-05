@@ -1,5 +1,4 @@
 // file Spacecraft.h
-
 #ifndef SPACECRAFT_H
 #define SPACECRAFT_H
 
@@ -8,9 +7,7 @@
 
 class Spacecraft {    
 public:
-    
     Spacecraft();
-
     virtual ~Spacecraft() = default;
 
     // Sets the unique name of spaceship.
@@ -38,12 +35,6 @@ public:
     
     // A method that returns a total annual maintenance cost.
     virtual int get_annual_maintenance_cost() = 0;
-    
-    
-    
-
-    
-    
 
 private:
     std::string name;
@@ -52,5 +43,4 @@ private:
 
     std::unordered_set<std::string> names;  // The unique names of the spaceships.
 };
-
 #endif  // SPACECRAFT_H

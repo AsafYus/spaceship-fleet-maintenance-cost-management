@@ -60,4 +60,3 @@ int Spacecraft::get_fire_power()
 {
     return fire_power;
 }
-
