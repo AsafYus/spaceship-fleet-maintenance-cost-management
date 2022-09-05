@@ -12,7 +12,7 @@ public:
     void set_number_of_space_cranes(int _number_of_space_cranes);
     // Gets the number of space cranes of cargoship.
     int get_number_of_space_cranes();
-    
+    // Gets the annual maintenance cost by the sum of the base annual maintenance cost that is 2000$ and 2$ for each Megaton of cargo capacity.
     int get_annual_maintenance_cost();
 
 private:
