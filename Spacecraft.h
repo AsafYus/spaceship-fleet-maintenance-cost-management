@@ -11,22 +11,22 @@ public:
     virtual ~Spacecraft() = default;
 
     // Sets the unique name of spaceship.
-    void set_name(const std::string& _name);
+    void set_name(const std::string& name);
     // Returns the unique name of spaceship.
     std::string get_name();
     
     // Sets the commission Year.
-    void set_comission_year(int _commission_year);
+    void set_comission_year(int commission_year);
     // Returns the year of manufacture spaceship.
     int get_commission_year();
 
     // Sets the maximum speed of spaceship.
-    void set_maximal_speed(float _maximal_speed);
+    void set_maximal_speed(float maximal_speed);
     // Returns the maximum speed of spaceship.
     float get_maximal_speed();
 
     // Sets the cargo capacity of spaceship.
-    void set_cargo_capacity(int _cargo_capacity);
+    void set_cargo_capacity(int cargo_capacity);
     // Gets the cargo capacity of spaceship.
     int get_cargo_capacity();
 
@@ -37,9 +37,9 @@ public:
     virtual int get_annual_maintenance_cost() = 0;
 
 private:
-    std::string name;
-    int commission_year, cargo_capacity, fire_power;
-    float maximal_speed;
+    std::string name_;
+    int commission_year_, cargo_capacity_, fire_power_;
+    float maximal_speed_;
 
     std::unordered_set<std::string> names;  // The unique names of the spaceships.
 };
