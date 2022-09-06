@@ -25,7 +25,7 @@ public:
     // Sets the annual maintenance cost of weapon.
     void set_annual_maintenance_cost(int annual_maintenance_cost);
     // Gets the annual maintenance cost of weapon.
-    int get_annual_maintenance_cost();
+    int get_annual_maintenance_cost() const;
 
 private:
     std::string name_;

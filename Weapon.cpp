@@ -66,7 +66,7 @@ void Weapon::set_annual_maintenance_cost(int annual_maintenance_cost)
         annual_maintenance_cost_ = 0;
 }
 
-int Weapon::get_annual_maintenance_cost()
+int Weapon::get_annual_maintenance_cost() const
 {
     return annual_maintenance_cost_;
 }
