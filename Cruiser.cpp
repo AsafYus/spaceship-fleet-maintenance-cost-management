@@ -13,7 +13,7 @@ int Cruiser::get_annual_maintenance_cost()
 {
     int sum = 2000;
 
-    for (const auto& weapon : get_weapon_array())
+    for (const auto& weapon : Battleship::get_weapon_array())
         sum += weapon.get_annual_maintenance_cost();
     
     sum += 1000 * get_maximal_speed();
