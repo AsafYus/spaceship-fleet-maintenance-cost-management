@@ -8,6 +8,16 @@ class Cargoship : public Spacecraft {
 public:
     Cargoship(const std::string& name, int commission_year, float maximal_speed, int cargo_capacity, int number_of_space_cranes);
     
+    // Copy construcot.
+    Cargoship(const Cargoship& other);
+    // Copy assignment operator. 
+    Cargoship& operator= (const Cargoship& other);
+
+    // Move constructor.
+    Cargoship(Cargoship&& other) noexcept;
+    // Move assignment operator.
+    Cargoship& operator= (Cargoship&& other) noexcept;
+     
     // Sets the number of space cranes of cargoship.
     void set_number_of_space_cranes(int number_of_space_cranes);
     // Gets the number of space cranes of cargoship.

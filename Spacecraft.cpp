@@ -3,6 +3,12 @@
 #include <iostream>
 
 Spacecraft::Spacecraft() : fire_power_(10) {}
+Spacecraft::Spacecraft(const std::string& name, int commission_year, float maximal_speed, int cargo_capacity) {
+    set_name(name);
+    set_comission_year(commission_year);
+    set_maximal_speed(maximal_speed);
+    set_cargo_capacity(cargo_capacity);
+}
 
 void Spacecraft::set_name(const std::string& name)
 {
@@ -15,7 +21,7 @@ void Spacecraft::set_name(const std::string& name)
     }
 }
 
-std::string Spacecraft::get_name()
+std::string Spacecraft::get_name() const
 {
     return name_;
 }
@@ -25,7 +31,7 @@ void Spacecraft::set_comission_year(int commission_year)
     commission_year_ = commission_year;
 }
 
-int Spacecraft::get_commission_year()
+int Spacecraft::get_commission_year() const
 {
     return commission_year_;
 }
@@ -38,7 +44,7 @@ void Spacecraft::set_maximal_speed(float maximal_speed)
         maximal_speed_ = 0.0f;
 }
 
-float Spacecraft::get_maximal_speed()
+float Spacecraft::get_maximal_speed() const
 {
     return maximal_speed_;
 }
@@ -51,7 +57,7 @@ void Spacecraft::set_cargo_capacity(int cargo_capacity)
         cargo_capacity_ = 0;
 }
 
-int Spacecraft::get_cargo_capacity()
+int Spacecraft::get_cargo_capacity() const
 {
     return cargo_capacity_;
 }
